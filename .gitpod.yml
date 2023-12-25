@@ -1,3 +1,13 @@
+tasks:
+  - name: aws-cli
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial
+    init: |
+      cd /workspace
+      curl -O "https://awscli.amazonaws.com/AWSCLIV2.msi"
+      msiexec.exe /i AWSCLIV2.msi
+      cd $THEIA_WORKSPACE_ROOT
+
 
 vscode:
   extensions:
