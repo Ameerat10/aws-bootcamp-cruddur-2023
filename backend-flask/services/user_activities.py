@@ -33,7 +33,7 @@ class UserActivities:
       xray_recorder.end_subsegment()
     finally:
       # close the segment
-      self.xray_recorder.end_subsegment()
+      xray_recorder.end_subsegment()
 
     return model
 
